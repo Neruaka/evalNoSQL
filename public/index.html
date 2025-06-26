@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet d'Adresses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Carnet d'Adresses</h1>
+            <p>Application MongoDB - Évaluation NoSQL</p>
+        </header>
+
+        <main>
+            <!-- Formulaire d'ajout -->
+            <section class="form-section">
+                <h2>Ajouter un contact</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone *</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adresse">Adresse</label>
+                        <textarea id="adresse" name="adresse" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Ajouter le contact</button>
+                    <button type="button" id="cancelBtn" class="btn-secondary" style="display: none;">Annuler</button>
+                </form>
+            </section>
+
+            <!-- Liste des contacts -->
+            <section class="contacts-section">
+                <h2>Mes contacts</h2>
+                <div id="contactsContainer">
+                    <div class="loading">Chargement des contacts...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
