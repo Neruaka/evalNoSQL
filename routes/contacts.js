@@ -3,7 +3,6 @@ const Contact = require('../models/Contact');
 const router = express.Router();
 
 // GET /api/contacts - Récupérer tous les contacts
-// GET /api/contacts - Récupérer tous les contacts
 router.get('/', async (req, res) => {
   try {
     console.log('Tentative de récupération des contacts...');
